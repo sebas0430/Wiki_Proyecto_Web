@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar Fragment</title>
+    <link rel="stylesheet" href="../../static/styles.css" th:href="@{/styles.css}">
+</head>
+
+<body>
+
+    <header th:fragment="header" class="site-header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">WikiProyecto</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a th:href="@{/}" class="active">Inicio</a></li>
+                    <li><a th:href="@{/nosotros}">Sobre Nosotros</a></li>
+                    <li><a th:href="@{/contactenos}">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</body>
+
+</html>

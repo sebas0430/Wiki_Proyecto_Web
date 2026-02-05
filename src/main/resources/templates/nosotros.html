@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página de nosotros</title>
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="../static/styles.css" th:href="@{/styles.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Aquí usamos el fragmento del navbar -->
+    <!-- sintaxis: th:replace="ruta/archivo :: nombre_fragmento" -->
+    <div th:replace="fragments/navbar :: header"></div>
+
+    <div class="container" style="margin-top: 3rem; margin-bottom: 4rem;">
+        <main class="content-full">
+            <article style="max-width: 900px; margin: 0 auto; border-top: 4px solid var(--color-secondary);">
+                <header class="article-header" style="text-align: center;">
+                    <h1>Los Aventureros</h1>
+
+                </header>
+
+                <div class="article-body">
+                    <h2>¿Quiénes somos?</h2>
+                    <p style="text-align: center; font-size: 1.2rem;">
+                        No somos tu típico equipo de desarrollo aburrido. Somos un grupo de exploradores digitales,
+                        alquimistas de código y soñadores de píxeles.
+                        Nuestra misión: conquistar la web, luchar contra los bugs y beber cantidades industriales de
+                        café en el proceso.
+                        ¡Bienvenidos a nuestra base de operaciones! 🚀
+                    </p>
+
+                    <h2 style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">Los Protagonistas</h2>
+
+                    <div class="team-grid">
+                        <!-- Miembro 1 -->
+                        <div class="team-card">
+                            <div class="avatar">
+                                <img src="../static/images/Foto-sebas.jpeg" th:src="@{/images/Foto-sebas.jpeg}"
+                                    alt="Foto de Sebastián">
+                            </div>
+                            <h3>Sebastián</h3>
+                            <p>Architect of Chaos (Lead Dev)</p>
+                            <p class="bio">Puede compilar código con la mente. Dice que documenta el código, pero todos
+                                sabemos que es mentira.</p>
+                        </div>
+
+                        <!-- Miembro 2 -->
+                        <div class="team-card">
+                            <div class="avatar">
+                                <img src="../static/images/Foto-vanessa.jpeg" th:src="@{/images/Foto-vanessa.jpeg}"
+                                    alt="Foto de Vanessa">
+                            </div>
+                            <h3>Vanessa</h3>
+                            <p>Pixel Enchantress (UI/UX)</p>
+                            <p class="bio">Hace que las cosas se vean bonitas. No le gusta nada. Es lesbiana</p>
+                        </div>
+
+                        <!-- Miembro 3 -->
+                        <div class="team-card">
+                            <div class="avatar">
+                                <img src="../static/images/Foto-santy.jpeg" th:src="@{/images/Foto-santy.jpeg}"
+                                    alt="Foto de Santiago">
+                            </div>
+                            <h3>Santiago</h3>
+                            <p>Server Tamer (DevOps)</p>
+                            <p class="bio">Habla con los servidores. A veces los servidores le responden. Le tiene miedo
+                                a la luz del sol. </p>
+                        </div>
+
+                        <!-- Miembro 4 -->
+                        <div class="team-card">
+                            <div class="avatar">
+                                <img src="../static/images/Foto-angie.jpeg" th:src="@{/images/Foto-angie.jpeg}"
+                                    alt="Foto de Angy">
+                            </div>
+                            <h3>Angy</h3>
+                            <p>Bug Hunter (QA & Dev)</p>
+                            <p class="bio">Encuentra fallos antes de que existan. Su pasatiempo es romper y pedir ayuda.
+
+                            </p>
+                        </div>
+
+                        <!-- Miembro 5 -->
+                        <div class="team-card">
+                            <div class="avatar">
+                                <img src="../static/images/Foto-ivan.jpeg" th:src="@{/images/Foto-ivan.jpeg}"
+                                    alt="Foto de Ivan">
+                            </div>
+                            <h3>Ivan</h3>
+                            <p>Security Ninja (SecOps)</p>
+                            <p class="bio">Entra en el sistema sin dejar rastro. Proteje menos que la defensa del Real
+                                Madrid.</p>
+                        </div>
+
+                        <!-- Miembro 6 -->
+                        <div class="team-card">
+                            <div class="avatar">
+                                <img src="../static/images/Foto-tom.jpeg" th:src="@{/images/Foto-tom.jpeg}"
+                                    alt="Foto de Tomas">
+                            </div>
+                            <h3>Tomas</h3>
+                            <p>Cloud Wizard (Cloud Arch)</p>
+                            <p class="bio">Vive en la nube, literalmente. Cree firmemente que todo se soluciona
+                                reiniciando el contenedor. Viaja mas que Rastacuando</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página de nosotros</title>
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="../static/styles.css" th:href="@{/styles.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    
+    <!-- Aquí usamos el fragmento del navbar -->
+    <!-- sintaxis: th:replace="ruta/archivo :: nombre_fragmento" -->
+    <div th:replace="fragments/navbar :: header"></div>
+
+    <div class="container" style="margin-top: 3rem; margin-bottom: 4rem;">
+        <main class="content-full">
+            <article style="max-width: 700px; margin: 0 auto;">
+                <header class="article-header" style="text-align: center;">
+                    <h1>Contáctanos</h1>
+                    <p class="lead">¿Tienes preguntas o sugerencias? Envíanos un mensaje.</p>
+                </header>
+
+                <div class="article-body">
+                    <form id="contactForm" class="contact-form" novalidate>
+
+                        <!-- Nombre Completo -->
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo <span class="required">*</span></label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                            <span class="error-msg" id="error-nombre"></span>
+                        </div>
+
+                        <!-- Correo Electrónico -->
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@usuario.com" required>
+                            <span class="error-msg" id="error-email"></span>
+                        </div>
+
+                        <!-- Teléfono -->
+                        <div class="form-group">
+                            <label for="telefono">Teléfono <span class="required">*</span></label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Solo números" required >
+                            <span class="error-msg" id="error-telefono"></span>
+                        </div>
+
+                        <!-- Asunto -->
+                        <div class="form-group">
+                            <label for="asunto">Asunto <span class="required">*</span></label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Seleccione una opción...</option>
+                                <option value="soporte">Soporte Técnico</option>
+                                <option value="consulta">Consulta General</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <span class="error-msg" id="error-asunto"></span>
+                        </div>
+
+                        <!-- Mensaje -->
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje <span class="required">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                                required></textarea>
+                            <div class="char-counter">
+                                <span id="charCount">0</span>/400 caracteres
+                                <span id="charsNeeded"
+                                    style="display:none; color: var(--color-danger); margin-left:10px;">(Faltan
+                                    caracteres)</span>
+                            </div>
+                            <span class="error-msg" id="error-mensaje"></span>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                        </div>
+
+                        <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+                    </form>
+                </div>
+            </article>
+        </main>
+    </div>
+
+</body>
