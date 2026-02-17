@@ -39,7 +39,7 @@ public class PersonaFormularioController {
             @RequestParam String telefono) {
 
         // Crear y guardar la nueva persona
-        personaRepository.save(new Persona(null, nombre, apellido, telefono));
+        //personaRepository.save(new Persona(null, nombre, apellido, telefono));
 
         // Obtener todas las personas y pasarlas al modelo
         Iterable<Persona> personas = personaRepository.findAll();
