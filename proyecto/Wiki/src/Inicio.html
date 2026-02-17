@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki del Proyecto</title>
+    <link rel="stylesheet" href="Styles/estilos.css">
+    <!-- Fuente moderna e iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">WikiProyecto</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Inicio.html" class="active">Inicio</a></li>
+                    <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="Contactenos.html">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="layout container">
+        <aside class="sidebar">
+            <div class="sidebar-search">
+                <input type="search" placeholder="Buscar en la wiki..." aria-label="Buscar">
+            </div>
+            <nav class="sidebar-nav">
+                <h3>Introducción</h3>
+
+
+                <h3>Conceptos</h3>
+                <ul>
+                    <li><a href="#">Arquitectura</a></li>
+                    <li><a href="#">Base de Datos</a></li>
+                    <li><a href="#">Seguridad</a></li>
+                </ul>
+
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+                <header class="article-header">
+                    <div class="breadcrumbs">Proyecto / Visión General</div>
+                    <h1>Editor de Procesos Empresariales</h1>
+                    <div class="meta-info">
+                        <span>Semestre Actual</span>
+                        <span>•</span>
+                        <span>Desarrollo Web</span>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p class="lead">
+                        El proyecto consiste en el desarrollo de un <strong>visor y editor de procesos
+                            empresariales</strong>.
+                        Su objetivo es permitir la visualización y edición de procesos asociados a una empresa,
+                        garantizando la
+                        separación de información entre distintas organizaciones (multi-tenancy).
+                    </p>
+
+                    <h2>Alcance del Sistema</h2>
+                    <p>
+                        El sistema estará orientado <strong>únicamente a la visualización y edición</strong>, no a la
+                        ejecución de los procesos.
+                    </p>
+                    <div class="alert info">
+                        <strong>Enfoque Académico:</strong> Los usuarios podrán consultar, crear, modificar y organizar
+                        procesos,
+                        pero <em>no se dispararán flujos automáticos</em> ni tareas de procesamiento real. El objetivo
+                        es evaluar arquitectura,
+                        seguridad y buenas prácticas.
+                    </div>
+
+                    <h2>Plan de Entregas</h2>
+                    <p>El desarrollo se realizará de forma incremental en tres etapas:</p>
+
+                    <div class="timeline">
+                        <h3>1. Backend (Lógica de Negocio)</h3>
+                        <p>Implementación de servicios REST para gestionar empresas, usuarios y procesos. Diseño del
+                            modelo de datos y lógica fundamental.</p>
+
+                        <h3>2. Frontend (Interfaz Web)</h3>
+                        <p>Construcción de la interfaz gráfica que consuma los servicios del backend, permitiendo la
+                            interacción visual con los procesos.</p>
+
+                        <h3>3. Integración Final</h3>
+                        <p>Despliegue completo del sistema (Frontend + Backend), asegurando seguridad, calidad de código
+                            y funcionamiento de extremo a extremo.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 WikiProyecto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
