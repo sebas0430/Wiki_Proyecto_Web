@@ -32,47 +32,48 @@ public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     @Column(nullable = false, length = 100)
     private String nombre;
-    
+
     @Column(nullable = false, length = 150)
-    private String rol;
-    
-    @Column(columnDefinition = "TEXT")
-    private String biografia;
-    
-    @Column(name = "url_foto", length = 255)
-    private String urlFoto;
-    
-    @Column(length = 100)
     private String email;
-    
+
+    @Column(nullable = false, length = 20)
+    private String telefono;
+
+    @Column(nullable = false, length = 50)
+    private String asunto;
+
+    @Column(columnDefinition = "TEXT", nullable = false)
+    private String mensaje;
+
     @Enumerated(EnumType.ORDINAL)
     @Column(nullable = false)
     private Status status;
-    
-    // Constructor sin ID y sin status para poder crear los nuevos registros que esten activos
-    public Persona(String nombre, String rol, String biografia, String urlFoto, String email) {
+
+    // Constructor sin ID y sin status para crear nuevos registros activos
+    public Persona(String nombre, String email, String telefono, String asunto, String mensaje) {
         this.nombre = nombre;
-        this.rol = rol;
-        this.biografia = biografia;
-        this.urlFoto = urlFoto;
         this.email = email;
+        this.telefono = telefono;
+        this.asunto = asunto;
+        this.mensaje = mensaje;
         this.status = Status.ACTIVE;
     }
-    
+
     // Enum para el estado de la persona
     public enum Status {
         ACTIVE(0),
         DELETED(1);
-        
+
         private final int value;
-        //Setter y Getter para el valor del enum
-        Status(int value) { 
+
+        // Setter y Getter para el valor del enum
+        Status(int value) {
             this.value = value;
         }
-        
+
         public int getValue() {
             return value;
         }

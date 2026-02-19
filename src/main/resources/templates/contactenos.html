@@ -12,7 +12,7 @@
 
 
 <body>
-    
+
     <!-- Aquí usamos el fragmento del navbar -->
     <!-- sintaxis: th:replace="ruta/archivo :: nombre_fragmento" -->
     <div th:replace="fragments/navbar :: header"></div>
@@ -26,7 +26,7 @@
                 </header>
 
                 <div class="article-body">
-                    <form id="contactForm" class="contact-form" novalidate>
+                    <form id="contactForm" class="contact-form" th:action="@{/contactenos}" method="post">
 
                         <!-- Nombre Completo -->
                         <div class="form-group">
@@ -45,7 +45,7 @@
                         <!-- Teléfono -->
                         <div class="form-group">
                             <label for="telefono">Teléfono <span class="required">*</span></label>
-                            <input type="tel" id="telefono" name="telefono" placeholder="Solo números" required >
+                            <input type="tel" id="telefono" name="telefono" placeholder="Solo números" required>
                             <span class="error-msg" id="error-telefono"></span>
                         </div>
 
@@ -87,4 +87,5 @@
         </main>
     </div>
 
+    <script src="../static/validation.js" th:src="@{/validation.js}"></script>
 </body>
