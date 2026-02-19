@@ -16,22 +16,29 @@
     <!-- sintaxis: th:replace="ruta/archivo :: nombre_fragmento" -->
     <div th:replace="fragments/navbar :: header"></div>
 
-     <div class="layout container">
+    <div class="layout container">
         <aside class="sidebar">
-            <div class="sidebar-search">
-                <input type="search" placeholder="Buscar en la wiki..." aria-label="Buscar">
-            </div>
             <nav class="sidebar-nav">
                 <h3>Introducción</h3>
-
+                <ul>
+                    <li><a th:href="@{/#vision-general}">Visión General</a></li>
+                    <li><a th:href="@{/#alcance}">Alcance del Sistema</a></li>
+                </ul>
 
                 <h3>Conceptos</h3>
                 <ul>
-                    <li><a href="#">Arquitectura</a></li>
-                    <li><a href="#">Base de Datos</a></li>
-                    <li><a href="#">Seguridad</a></li>
+                    <li><a th:href="@{/#plan-entregas}">Plan de Entregas</a></li>
+                    <li><a th:href="@{/#backend}">Backend</a></li>
+                    <li><a th:href="@{/#frontend}">Frontend</a></li>
+                    <li><a th:href="@{/#integracion}">Integración Final</a></li>
                 </ul>
 
+                <h3>Páginas</h3>
+                <ul>
+                    <li><a th:href="@{/nosotros}">Sobre Nosotros</a></li>
+                    <li><a th:href="@{/plantillas/lista-personas}">Lista Personas</a></li>
+                    <li><a th:href="@{/contactenos}">Contáctenos</a></li>
+                </ul>
             </nav>
         </aside>
 
@@ -39,7 +46,7 @@
             <article>
                 <header class="article-header">
                     <div class="breadcrumbs">Proyecto / Visión General</div>
-                    <h1>Editor de Procesos Empresariales</h1>
+                    <h1 id="vision-general">Editor de Procesos Empresariales</h1>
                     <div class="meta-info">
                         <span>Semestre Actual</span>
                         <span>•</span>
@@ -56,7 +63,7 @@
                         separación de información entre distintas organizaciones (multi-tenancy).
                     </p>
 
-                    <h2>Alcance del Sistema</h2>
+                    <h2 id="alcance">Alcance del Sistema</h2>
                     <p>
                         El sistema estará orientado <strong>únicamente a la visualización y edición</strong>, no a la
                         ejecución de los procesos.
@@ -69,19 +76,19 @@
                         seguridad y buenas prácticas.
                     </div>
 
-                    <h2>Plan de Entregas</h2>
+                    <h2 id="plan-entregas">Plan de Entregas</h2>
                     <p>El desarrollo se realizará de forma incremental en tres etapas:</p>
 
                     <div class="timeline">
-                        <h3>1. Backend (Lógica de Negocio)</h3>
+                        <h3 id="backend">1. Backend (Lógica de Negocio)</h3>
                         <p>Implementación de servicios REST para gestionar empresas, usuarios y procesos. Diseño del
                             modelo de datos y lógica fundamental.</p>
 
-                        <h3>2. Frontend (Interfaz Web)</h3>
+                        <h3 id="frontend">2. Frontend (Interfaz Web)</h3>
                         <p>Construcción de la interfaz gráfica que consuma los servicios del backend, permitiendo la
                             interacción visual con los procesos.</p>
 
-                        <h3>3. Integración Final</h3>
+                        <h3 id="integracion">3. Integración Final</h3>
                         <p>Despliegue completo del sistema (Frontend + Backend), asegurando seguridad, calidad de código
                             y funcionamiento de extremo a extremo.</p>
                     </div>
