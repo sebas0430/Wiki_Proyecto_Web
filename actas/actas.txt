@@ -24,3 +24,34 @@ ACUERDOS Y COMPROMISOS:
 1.  Hacer una metodologia cascada para hacer el diagrama de clases basado en las historias de usuario 
 ===========================
 
+===========================
+ACTA DE REUNIÓN
+===========================
+Título: Revision sprint #1
+Fecha: 2026-03-10
+Lugar: Presencial
+Registrado el: 10/03/2026 16:25:08
+
+ASISTENTES:
+- Sebastian Sanchez
+- Vanesa Florez
+- Santiago Avila
+- Angie Bautista
+- Ivan Cortes
+- Tomas Ospina
+
+TEMAS TRATADOS:
+1. Revisión del sprint 
+2. Planeación siguiente sprint  
+
+ACUERDOS Y COMPROMISOS:
+- Profe: Dar permisos para utilizar la base de datos
+- Sebastián: Manejar Merge del sprint anterior.
+- Angie & Tomas: Con los permisos del profe, organizar la base de datos
+- Vanesa & Santi: Manejo de los controladores
+- Iván: Revisión para la implementación de pruebas unitarias
+
+OBSERVACIONES:
+N/A
+===========================
+
