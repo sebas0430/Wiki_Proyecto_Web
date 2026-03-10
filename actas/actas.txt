@@ -27,6 +27,32 @@ ACUERDOS Y COMPROMISOS:
 ===========================
 ACTA DE REUNIÓN
 ===========================
+Título: Reunion de planificacion
+Fecha: 2026-02-26
+Lugar: Presencial
+Registrado el: 26/02/2026 17:03:53
+
+ASISTENTES:
+-Sebastián
+-Ivan
+-Tomas
+-Santiago
+-Vanesa
+-Angy
+
+TEMAS TRATADOS:
+1. Revisar tareas para el siguiente sprint
+2. Division de subgrupos
+3. Asignacion de tareas
+
+
+ACUERDOS Y COMPROMISOS:
+1.  Hacer una metodologia cascada para hacer el diagrama de clases basado en las historias de usuario 
+===========================
+
+===========================
+ACTA DE REUNIÓN
+===========================
 Título: Revision sprint #1
 Fecha: 2026-03-10
 Lugar: Presencial
