@@ -81,3 +81,27 @@ OBSERVACIONES:
 N/A
 ===========================
 
+===========================
+ACTA DE REUNIÓN
+===========================
+Título: Reunion de supervicion de spring 2
+Fecha: 2026-03-12
+Lugar: Presencial
+Registrado el: 12/03/2026 21:23:55
+
+ASISTENTES:
+Ivan Cortes
+Vanessa Florez
+Sebastian Sanchez
+Santiago Avila
+Angie Bautista
+Tomas Ospina
+
+TEMAS TRATADOS:
+Revision del sprint anterior y planeacion para el ultimo spring
+
+ACUERDOS Y COMPROMISOS:
+Implementacion de pruebas unitarias
+Creacion de las tablas y de las relaciones de la base de datos
+===========================
+
